@@ -1,4 +1,12 @@
-# Ponto importante para `build`
+# Aqui a brincadeira nasceu
+
+- `- jekyll b`
+
+# Aqui a brincadeira começou
+
+- ` jekyll s`
+
+## Ponto importante para `build`
 
 1 - Instalar o Gem
 `gem install jekyll-paginate`
@@ -11,7 +19,6 @@ paginate: 5
 ```
 
 3 - Dentro do Gemfile
-
 ``` ruby
 group :jekyll_plugins do
    gem "jekyll-paginate"
