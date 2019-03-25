@@ -1,4 +1,3 @@
-# Site settings
 title: yuribreion
 email: yuribreion
 description: > # this means to ignore newlines until "baseurl:"
@@ -8,12 +7,10 @@ url:  # the base hostname & protocol for your site
 twitter_username: yuribreion
 github_username:  yuribreion1
 
-# Build settings
 markdown: kramdown
 
 highlighter: rouge
 
-# Pagination
 paginate: 15
 paginate_path: "/blog/page:num/"
 
@@ -22,9 +19,9 @@ plugins:
 paginate: 5
 
 collections:
-  portfolio:
+  java:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /java/:path/
   php:
     output: true
     permalink: /php/:path/
