@@ -24,3 +24,19 @@ group :jekyll_plugins do
    gem "jekyll-paginate"
 end
 ```
+
+- Gemfile
+``` ruby 
+source "https://rubygems.org"
+gem "rake"
+ruby "2.5.3"
+```
+
+- Rakefile
+``` ruby
+namespace :assets do
+  task :precompile do
+    puts `bundle exec jekyll build`
+  end
+end
+```
