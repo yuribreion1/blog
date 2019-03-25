@@ -1,0 +1,66 @@
+---
+layout: post
+title: começando com php - aula 3
+date: 2019-03-09 08:00:00
+---
+
+<div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/322090343" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+
+como agora já temos um formuário, agora temos que dar vida a ele no sentido de gravar em um banco de dados
+
+no `xampp` temos o `mysql` como nosso [SGBD](https://www.oficinadanet.com.br/post/16631-o-que-e-um-sgbd) e toda gestão disso fica no `phpmyadmin` que fica em `http://localhost/phpmyadmin/`
+
+um criei uma tabela `produtos` mais ou menos assim:
+
+``` sql
+CREATE TABLE `loja`.`produtos` 
+    ( 
+        `id` INT(5) NOT NULL AUTO_INCREMENT , 
+        `nome` VARCHAR(255) NOT NULL , 
+        `preco` DECIMAL(5) NOT NULL , 
+        `data_registro` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+```
+
+agora nosso `form` vai ter uma `action` apontando para o arquivo php que vai inserir o produto no banco
+
+para pegar os dados do formulário temos que entender o que vem do método `POST` [tem mais aqui sobre](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST)
+
+olhando no `header` da requisição vemos em `form data` os valores que foram passados
+
+já no nosso código pegamos o valor mais ou menos assim:
+
+```php
+<?php
+    $nome = $_POST['nome'];
+    $preco = $_POST['preco'];
+?>
+```
+
+vamos conectar no nosso banco de dados `loja`
+
+``` php
+<?php
+    $conexao = mysqli_connect('localhost','root','','loja');
+?>
+```
+
+e vamos criar a query que vai inserir o produto no banco: 
+
+
+``` php
+<?php
+    $query = "INSERT INTO produtos(nome, preco) VALUES ('{$nome}',{$preco})";
+?>
+```
+
+e por ultimo vamos executar esta query: 
+
+``` php
+<?php
+    $retorno = mysqli_query($conexao, $query);
+?>
+```

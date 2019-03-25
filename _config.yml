@@ -1,0 +1,32 @@
+# Site settings
+title: yuribreion
+email: yuribreion
+description: > # this means to ignore newlines until "baseurl:"
+  Coisas de dev para devs
+baseurl:  # the subpath of your site, e.g. /blog/
+url:  # the base hostname & protocol for your site
+twitter_username: yuribreion
+github_username:  yuribreion1
+
+# Build settings
+markdown: kramdown
+
+highlighter: rouge
+
+# Pagination
+paginate: 15
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-paginate
+paginate: 5
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+  php:
+    output: true
+    permalink: /php/:path/
+
+

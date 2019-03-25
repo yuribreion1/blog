@@ -1,0 +1,46 @@
+---
+layout: post
+title: começando com php - aula 2
+date: 2019-03-08 07:59:00
+---
+
+<div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/322000709" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+
+agora que melhoramos um pouco nosso projeto, onde já temos um menu, bora criar nossas paginas, neste momento o cadastro de produtos...
+
+criamos nosso arquivo `cadastrar-produto.php` e fazemos nossos `includes` que vão pegar o `cabecalho` e `rodape`
+
+criamos um formulário, e pegamos uma ideia la no [site do uikit](https://getuikit.com/docs/form)
+
+no final vai ficar mais ou menos assim: 
+
+``` php
+
+<?php include("cabecalho.php") ?>
+<div class="uk-container-expand uk-padding">
+<legend class="uk-legend uk-margin">Inserir produto</legend>
+    <form action="adicionar-produto.php" method="post">
+        <div class="uk-margin">
+            <label class="uk-form-label" for="nome">Nome</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" name="nome" id="nome" type="text" placeholder="iPhone 8 Plus" required>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="preco">Preço</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" name="preco" id="preco" type="number" required>
+                </div>
+            </div>
+            <button class="uk-button uk-button-default" type="submit">Submeter</button>
+            <br>
+            <hr>
+            <a href="index.php">Voltar</a>
+    </form>
+</div>
+<?php include("rodape.php") ?>
+```
+**próximo passo é inserir no banco**

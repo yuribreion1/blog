@@ -1,0 +1,81 @@
+---
+layout: post
+title: começando com php - aula 1
+date: 2019-03-07 07:59:00
+---
+
+<div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/321997010" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+aqui vamos falar bastante de `PHP` e muita coisa vai acontecer aqui no improvido, mas a ideia é que possamos executar e que funcione tudo que vamos fazer por aqui.
+
+nós vamos trabalhar com o [xampp](https://www.apachefriends.org/pt_br/index.html) como nosso servidor de aplicação e tambem o [uikit](https://getuikit.com) como um framework similar ao `bootstrap`. banco de dados também vai fazer parte da nossa caminhada por aqui. 
+
+vamos ativar os serviços sempre no `xampp control panel`, aqui vamos ativar nossos serviços
+
+![xamppcontrolpanel](https://netbeans.org/images_www/articles/72/php/configure-php-environment-windows/xampp-control-panel.png)
+
+**nossos projetos sempre ficarão no diretório `htdocs`!**
+
+nosso projeto vai ser o `loja-nova`
+
+minha `ide` preferida é o [vscode](https://code.visualstudio.com/) mas use o seu de preferencia, e seguem alguns comandos legais como:
+    -   `CTRL + N` - Cria um novo arquivo
+    -   `CTRL + K, M` - Definir a sintaxe do arquivo
+    -   `!` - Cria a estrutura basica do `html`
+
+para começar nosso primeiro código, vamos fazer o famoso `hello world`
+
+``` php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        echo "Hello world!"
+    ?>
+</body>
+</html>
+```
+
+nota que todo código em php deve ser definido dentro `<?php seu código aqui ?>` 
+
+um recurso muito legal do `php` que nos ajuda a otimizar nosso código é o tal do `include`
+
+``` php
+<?php include("cabecalho.php") ?>
+<?php
+    seu código vai aqui
+?>
+<?php include("rodape.php") ?>
+```
+_este arquivo é um exemplo de como fica separado, evitando repetição_
+
+para trabalhar com o `uikit` no nosso projeto vamos baixar ele, e colocar ele em nosso `cabecalho.php` se liga nesse exemplo:
+
+``` html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+    </body>
+</html>
+```
+
+abrindo a aba de `network` em nosso navegador, através do `F12`, conseguimos ver o se o carregamento do `uikit` esta legal
+
+![network](https://developers.google.com/web/tools/chrome-devtools/network-performance/imgs/panes.png?hl=pt-br)
