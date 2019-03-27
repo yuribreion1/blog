@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  começando com vue js
+title:  começando com vue.js
 date:   2019-03-26 23:40:16
 description: trabalhando com frameworks client-side
 ---
 ### Criação de uma _single page application_ com Vue.js
 <br>
 - Abrir o _vscode_
-- Acessando o terminal a partir da pasta do projeto executar `npm install @vue/cli`
+- Acessando o terminal a partir da pasta do projeto executar `npm install @vue/cli -g`
 - `./node_modules/.bin/vue create meu_site`
 - Acessar a sua pasta `cd meu_site`
 - Executar usando `npm run serve`
@@ -21,6 +21,13 @@ Se der certo você vai receber:
 ```
 
 Com o _node js_ podemos injetar arquivos _Javascript_ como o uso do `require`
+
+Outra forma de instalar e inicializar um novo projeto pode ser feito da seguinte forma:
+
+- `vue init webpack-simple <nome>` criando um projeto no molde webpack
+- `cd <nome>` para acessar o projeto
+- `npm i` para instalar as dependencias
+- `npm run dev` sobe um servidor e abre no nosso navegador
 
 - Notamos que foi gerado um arquivo chamado `App.vue` que é renderizado dentro do _main.js_
 - Os atributos da tag são as propriedades do componente
