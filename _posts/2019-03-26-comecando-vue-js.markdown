@@ -4,8 +4,8 @@ title:  começando com vue js
 date:   2019-03-26 23:40:16
 description: trabalhando com frameworks client-side
 ---
-## Criação de uma _single page application_ com Vue.js
-
+### Criação de uma _single page application_ com Vue.js
+<br>
 - Abrir o _vscode_
 - Acessando o terminal a partir da pasta do projeto executar `npm install @vue/cli`
 - `./node_modules/.bin/vue create meu_site`
