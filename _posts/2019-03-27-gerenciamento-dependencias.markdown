@@ -46,3 +46,7 @@ No caso do _Java_ também existem gerenciadores de dependencia como:
 
 -   [_Maven_](https://maven.apache.org/)
 -   [_Grandle_](https://gradle.org/)
+
+Chegamos ao conceito de container, que além das dependencias da aplicação, existem também todas as demais configurações de middleware sejam mantidas, se tratando de _empacotamento_
+
+Uma pratica para este assunto foi publicada [aqui](https://pt.surveymonkey.com/r/TY26VX7)
