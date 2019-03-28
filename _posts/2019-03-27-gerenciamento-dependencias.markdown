@@ -41,3 +41,8 @@ npm i
 Também há no _Python_ o [_pip_](https://pypi.org/) com a mesma proposta:
 
 ![pip](https://pypi.org/static/images/logo-small.6eef541e.svg)
+
+No caso do _Java_ também existem gerenciadores de dependencia como:
+
+-   [_Maven_](https://maven.apache.org/)
+-   [_Grandle_](https://gradle.org/)
