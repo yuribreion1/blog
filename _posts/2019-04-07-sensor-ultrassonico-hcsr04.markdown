@@ -45,8 +45,8 @@ Um exemplo do seu uso com a ajuda do sino(_buzzer_) para saber a distância real
 #### **Especificações técnicas:**
 <br/>
 
-<object data="https://www.mouser.com/ds/2/813/HCSR04-1022824.pdf" type="application/pdf" width="700px" height="700px">
+<object data="https://www.mouser.com/ds/2/813/HCSR04-1022824.pdf" type="application/pdf" width="900px" height="900px">
     <embed src="https://www.mouser.com/ds/2/813/HCSR04-1022824.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.mouser.com/ds/2/813/HCSR04-1022824.pdf">Download PDF</a>.</p>
+        
     </embed>
 </object>
