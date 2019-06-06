@@ -24,5 +24,8 @@ collections:
   php:
     output: true
     permalink: /php/:path/
+  android:
+    output: true
+    permalink: /android/:path/
 
 
