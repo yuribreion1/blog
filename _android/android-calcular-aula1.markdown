@@ -149,3 +149,40 @@ Segue o código completo da `activity_main.xml`:
         android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 ```
+
+**Legal** nossa tela já esta montada, agora temos que configurar a lógica disso tudo, e isso precisa ser feito em `MainActivity.java`
+
+No primeiro momento vamos mapear os campos que foram usados como `EditText`:
+
+``` java
+    EditText edtNum1;
+    EditText edtNum2;
+```
+
+Logo em seguida atribuimos estes caras aos id's criados lá no arquivo xml, isto tudo dentro do método `onCreate` para que seja carregado ao iniciar:
+
+``` java
+    edtNum1 = findViewById(R.id.edtNum1);
+    edtNum2 = findViewById(R.id.edtNum2);
+```
+
+No final, vamos criar o método que efetivamente faz a soma ficando da seguinte forma:
+
+``` java
+    public void somar(View view) {
+        int num1 = Integer.parseInt(edtNum1.getText().toString());
+        int num2 = Integer.parseInt(edtNum2.getText().toString());
+
+        int soma = num1 + num2;
+
+        Toast.makeText(this, "A soma é: " + soma, Toast.LENGTH_SHORT).show();
+    }
+```
+
+**Note que usamos um _Toast_ para lançar um alerta com o resultado da soma após o botão ser clicado**
+
+É importante ressaltar que esta função somente será invocada porque colocamos o método **`onClick`** lá no arquivo xml dentro da tag `Button`
+
+``` xml
+    android:onClick="somar"
+```
