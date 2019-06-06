@@ -7,9 +7,9 @@ date: 2019-06-16 20:29:00
 
 Vamos começar com um exemplo de código no Android dado logo no começo do semestre, algo bem basico como fazer uma soma de dois valores:
 
-No arquivo `activity_main.xml` vamos seguir os seguintes passos: 
+No arquivo `activity_main.xml` vamos seguir os seguintes passos:
 
--   Abrir a tag `linear layout` definindo altura, comprimento e orientação:
+- Abrir a tag `linear layout` definindo altura, comprimento e orientação:
 
 ``` xml
 <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
@@ -33,7 +33,7 @@ _lá na frente vamos fechar esta tag `linearlayout`_
         android:textStyle="bold"/>
 ```
 
--   Agora teremos o seguinte formato: um `textview` e um `edittext` para cada campo a ser digitado em nosso programa, em regra eles serão manipulados para fazer o calculo, então o código vai ficar assim: 
+- Agora teremos o seguinte formato: um `textview` e um `edittext` para cada campo a ser digitado em nosso programa, em regra eles serão manipulados para fazer o calculo, então o código vai ficar assim:
 
 ``` xml
     <TextView
@@ -73,7 +73,7 @@ _lá na frente vamos fechar esta tag `linearlayout`_
         />
 ```
 
-É importante notar que colocar um id para cada `edittext` para que estes sejam manipulados mais a frente. 
+É importante notar que colocar um id para cada `edittext` para que estes sejam manipulados mais a frente.
 
 Para fechar, vamos colocar um botão que vai chamar este processo de calcular:
 
@@ -147,6 +147,5 @@ Segue o código completo da `activity_main.xml`:
         android:text="@string/calcular"
         android:onClick="somar"
         android:layout_gravity="center_horizontal"/>
-        
     </LinearLayout>
 ```
