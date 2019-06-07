@@ -5,13 +5,13 @@ description: Jogando dados
 date: 2019-06-06 21:53:00
 ---
 
-Avançando no Android vamos lidar com um caso um pouco mais complexo, vamos montar um jogo de dados onde dois jogadores disputam para saber quem tira o número maior. 
+Avançando no Android vamos lidar com um caso um pouco mais complexo, vamos montar um jogo de dados onde dois jogadores disputam para saber quem tira o número maior.
 
-Seguindo como já temos feito, vamos montar a tela para este caso seguindo a seguinte estrutura: 
+Seguindo como já temos feito, vamos montar a tela para este caso seguindo a seguinte estrutura:
 
 - LinearLayout
     - TextView -> **Titulo da pagina**
-    - ImageView -> **Imagem do primeiro dado** 
+    - ImageView -> **Imagem do primeiro dado**
     - TextView -> **Label de jogador 1**
     - ImageView -> **Imagem do segundo dado**
     - TextView -> **Label do jogador 2**
@@ -114,9 +114,9 @@ Seguimos o que já tinhamos feito antes, como inicializar as variáveis e as atr
     }
 ```
 
-Com tudo mapeado, podemos criar nosso método **jogar** para que ele faça o sorteio e atribua as imagens corretas do dado: 
+Com tudo mapeado, podemos criar nosso método **jogar** para que ele faça o sorteio e atribua as imagens corretas do dado:
 
-Para trabalhar com manipulação aleatória inicializamos o **Random**: 
+Para trabalhar com manipulação aleatória inicializamos o **Random**:
 
 ``` java
     Random r = new Random();
@@ -139,7 +139,7 @@ Após feito o sorteio, temos que trocar a imagem do dado correspondente ao núme
     imgJogador2.setImageResource(imagens[b]);
 ```
 
-E como vamos retornar o ganhador? Temos que montar esta lógica, e com o valor sorteado podemos facilmente saber, segue como podemos fazer isto: 
+E como vamos retornar o ganhador? Temos que montar esta lógica, e com o valor sorteado podemos facilmente saber, segue como podemos fazer isto:
 
 ``` java
     if (a > b) {
