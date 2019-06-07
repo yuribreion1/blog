@@ -2,14 +2,14 @@
 layout: post
 title: Android para a PS - Parte 4
 description: Trocando imagens entre si
-date: 2019-06-06 21:53:00
+date: 2019-06-06 23:23:00
 ---
 
 Este caso é muito parecido com a [manipulação de imagens](https://yuribreion1.github.io/blog/android/android-aula2-manipulando-img/) que já fizemos, porem com um pouco de lógica no meio para fazer a gente pensar mais:
 
 > O objetivo é trocar as imagens entre si uma vez que você clique no botão
 
-Para isto vamos modelar a tela com as duas imagens, um quadrado e um triangulo e um botão, adiantando um pouco nosso trabalho, ela vai ficar da seguinte forma:
+Para isto vamos modelar a tela com as duas imagens, um quadrado e um triangulo junto com um botão, adiantando um pouco nosso trabalho, ela vai ficar da seguinte forma:
 
 ``` xml
 <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/colorPrimary"
