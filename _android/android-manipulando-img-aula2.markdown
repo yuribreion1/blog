@@ -2,7 +2,7 @@
 layout: post
 title: Android para a PS - Parte 2
 description: Mais um passo dado nos estudos de Android nativo
-date: 2019-06-16 21:11:00
+date: 2019-06-06 21:11:00
 ---
 
 Neste próximo passo vamos criar um aplicativo que manipula imagens, onde cada botão que é clicado troca a imagem da pessoa.

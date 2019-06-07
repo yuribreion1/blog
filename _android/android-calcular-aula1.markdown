@@ -2,7 +2,7 @@
 layout: post
 title: Android para a PS - Parte 1
 description: Se preparando para a ultima prova do primeiro semestre
-date: 2019-06-16 20:29:00
+date: 2019-06-06 20:29:00
 ---
 
 Vamos começar com um exemplo de código no Android dado logo no começo do semestre, algo bem basico como fazer uma soma de dois valores:
