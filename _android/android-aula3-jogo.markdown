@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android para a PS - Parte 3
+title: Jogo dos dados
 description: Jogando dados
 date: 2019-06-06 21:53:00
 ---

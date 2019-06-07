@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android para a PS - Parte 1
+title: Fazendo calculos
 description: Se preparando para a ultima prova do primeiro semestre
 date: 2019-06-06 20:29:00
 ---

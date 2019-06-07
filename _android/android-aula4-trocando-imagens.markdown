@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android para a PS - Parte 4
+title: Trocando imagens
 description: Trocando imagens entre si
 date: 2019-06-06 23:23:00
 ---

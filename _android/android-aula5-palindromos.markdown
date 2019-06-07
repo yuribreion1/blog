@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android para a PS - Parte 5
+title: Manipulando strings
 description: Palíndromos
 date: 2019-06-07 16:04:00
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android para a PS - Parte 2
+title: Manipulando imagens
 description: Mais um passo dado nos estudos de Android nativo
 date: 2019-06-06 21:11:00
 ---
