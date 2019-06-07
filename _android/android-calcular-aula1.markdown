@@ -187,6 +187,6 @@ No final, vamos criar o método que efetivamente faz a soma ficando da seguinte 
     android:onClick="somar"
 ```
 
-Se liga como ficou o aplicativo no ar: 
+Se liga como ficou o aplicativo no ar:
 
 ![ydzdx.gif](https://a.imge.to/2019/06/07/ydzdx.gif)
